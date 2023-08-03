@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #343f4f;
+        flex-direction: column;
+        color: white;
+    }
+    button{
+        padding: 10px;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 3px;
+        color: white;
+        width: 100px;
+        height: 50px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    button:hover{
+background-color: white;
+box-shadow: 0  0 8px 1px white;
+color: #343f4f;
+    }
+</style>
+</head>
+<body>
+    <h1>0</h1>
+    <button> add </button>
+
+</body>
+<script>
+    const btn = document.querySelector('button')
+const h1 = document.querySelector('h1')
+let num = 0 ;
+btn.addEventListener('click' , function(){
+    num++
+    console.log(num)
+    h1.innerHTML = num ;
+} )
+</script>
+</html>
